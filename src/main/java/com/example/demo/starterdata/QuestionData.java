@@ -3,12 +3,15 @@ package com.example.demo.starterdata;
 import com.example.demo.entity.Answer;
 import com.example.demo.entity.Question;
 import com.example.demo.entity.SingleCorrectQuestion;
+import com.example.demo.entity.Test;
+import com.example.demo.model.TestDifficulty;
+import com.example.demo.model.TestPreparationParameters;
 import com.example.demo.repository.AnswerRepository;
 import com.example.demo.repository.QuestionRepository;
+import com.example.demo.service.TestServiceImpl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.util.Date;
 import java.util.List;
 
 @Component
@@ -27,6 +30,7 @@ public class QuestionData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+
         Answer answer1 = new Answer("ethanol");
         Answer answer2 = new Answer("propanone");
         Answer answer3 = new Answer("ethanamine");
@@ -43,6 +47,28 @@ public class QuestionData implements CommandLineRunner {
         question.setCorrectOption(correctAnswerIndex1);
 
         questionRepository.save(question);
+
+        TestServiceImpl testService = new TestServiceImpl();
+        List<String> difficulties = testService.generateDifficultyList(15, TestDifficulty.EASY);
+        difficulties.forEach(difficulty -> System.out.println("Difficulty: " + difficulty));
+
+        TestPreparationParameters testPreparationParameters = new TestPreparationParameters();
+        testPreparationParameters.setTestDifficulty(TestDifficulty.HARD);
+        testPreparationParameters.setTestDuration(45);
+        testPreparationParameters.setNumberOfQuestions(10);
+        testPreparationParameters.setTestName("Gaand Faad test");
+        List<String> topics = List.of("Quadratic Equation", "Circles", "Probability", "Mensuration", "Algebra", "Trigonometry");
+        testPreparationParameters.setTags(topics);
+
+        Test myTest = testService.createTest(testPreparationParameters);
+        System.out.println(myTest);
+
+        myTest.getQuestions().forEach(
+question1 -> {
+            System.out.println("Difficulty: " + question1.getDifficulty());
+            System.out.println("Tags: " + question1.getTags());
+        }
+        );
 
     }
 
