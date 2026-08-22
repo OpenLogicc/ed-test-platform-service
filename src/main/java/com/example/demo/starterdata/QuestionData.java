@@ -4,6 +4,8 @@ import com.example.demo.entity.Answer;
 import com.example.demo.entity.Question;
 import com.example.demo.entity.SingleCorrectQuestion;
 import com.example.demo.entity.Test;
+import com.example.demo.model.QuestionDifficulty;
+import com.example.demo.model.Subject;
 import com.example.demo.model.TestDifficulty;
 import com.example.demo.model.TestPreparationParameters;
 import com.example.demo.repository.AnswerRepository;
@@ -12,6 +14,7 @@ import com.example.demo.service.TestServiceImpl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Component
@@ -39,17 +42,18 @@ public class QuestionData implements CommandLineRunner {
         List<Answer> options1 = List.of(answer1, answer2, answer3, answer4);
         int correctAnswerIndex1 = 0;
 
-        SingleCorrectQuestion question = new SingleCorrectQuestion("Chemistry", "SCQ");
+        SingleCorrectQuestion question = new SingleCorrectQuestion(Subject.CHEMISTRY, "SCQ");
         question.setQuestionDescription("Which of the following organic compound is most acidic");
-        question.setDifficulty("Easy");
+        question.setDifficulty(QuestionDifficulty.EASY);
         question.setTags(List.of("organic chemistry", "goc"));
         question.setOptions(options1);
         question.setCorrectOption(correctAnswerIndex1);
+        question.setCreatedOn(LocalDate.now());
 
         questionRepository.save(question);
 
         TestServiceImpl testService = new TestServiceImpl();
-        List<String> difficulties = testService.generateDifficultyList(15, TestDifficulty.EASY);
+        List<QuestionDifficulty> difficulties = testService.generateDifficultyList(15, TestDifficulty.EASY);
         difficulties.forEach(difficulty -> System.out.println("Difficulty: " + difficulty));
 
         TestPreparationParameters testPreparationParameters = new TestPreparationParameters();

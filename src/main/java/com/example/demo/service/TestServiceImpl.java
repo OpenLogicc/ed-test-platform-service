@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import com.example.demo.entity.Question;
 import com.example.demo.entity.Test;
+import com.example.demo.model.QuestionDifficulty;
+import com.example.demo.model.Subject;
 import com.example.demo.model.TestDifficulty;
 import com.example.demo.model.TestPreparationParameters;
 import org.springframework.stereotype.Service;
@@ -21,7 +23,7 @@ public class TestServiceImpl implements TestService {
         test.setTestName(parameters.getTestName());
         int numberOfQuestions = parameters.getNumberOfQuestions();
         List<String> tagList = parameters.getTags();
-        List<String> difficultyList = generateDifficultyList(numberOfQuestions, parameters.getTestDifficulty());
+        List<QuestionDifficulty> difficultyList = generateDifficultyList(numberOfQuestions, parameters.getTestDifficulty());
         List<String> questionTopics = new ArrayList<>();
         for (int i = 0; i<numberOfQuestions; i++) {
            int randomIndex = (int) (Math.random() * tagList.size());
@@ -30,7 +32,7 @@ public class TestServiceImpl implements TestService {
         }
         List<Question> questions = new ArrayList<>();
         for (int i = 0; i < numberOfQuestions; i++) {
-            Question question = new Question(questionTopics.get(i), "Single Correct");
+            Question question = new Question(Subject.PHYSICS, "Single Correct");
             List <String> tags = new ArrayList<>();
             tags.add(questionTopics.get(i));
             question.setTags(tags);
@@ -41,9 +43,8 @@ public class TestServiceImpl implements TestService {
         return test;
     }
 
-    public List<String> generateDifficultyList(int numberOfQuestions, TestDifficulty testDifficulty) {
-        List<String> questionDifficulties = List.of("Easy", "Medium", "Hard");
-        List<String> selectedDifficulties = new ArrayList<>();
+    public List<QuestionDifficulty> generateDifficultyList(int numberOfQuestions, TestDifficulty testDifficulty) {
+        List<QuestionDifficulty> selectedDifficulties = new ArrayList<>();
         System.out.println(testDifficulty.getEasyPercentage()*numberOfQuestions);
         int easyCount = (int) (testDifficulty.getEasyPercentage()*numberOfQuestions);
         int mediumCount = (int) (testDifficulty.getMediumPercentage()*numberOfQuestions);
@@ -53,13 +54,13 @@ public class TestServiceImpl implements TestService {
             easyCount += numberOfQuestions - (easyCount + mediumCount + hardCount);
         }
         for(int i=0; i<easyCount; i++) {
-            selectedDifficulties.add(questionDifficulties.get(0));
+            selectedDifficulties.add(QuestionDifficulty.EASY);
         }
         for(int i=0; i<mediumCount; i++) {
-            selectedDifficulties.add(questionDifficulties.get(1));
+            selectedDifficulties.add(QuestionDifficulty.MEDIUM);
         }
         for(int i=0; i<hardCount; i++) {
-            selectedDifficulties.add(questionDifficulties.get(2));
+            selectedDifficulties.add(QuestionDifficulty.HARD);
         }
         Collections.shuffle(selectedDifficulties);
         return selectedDifficulties;

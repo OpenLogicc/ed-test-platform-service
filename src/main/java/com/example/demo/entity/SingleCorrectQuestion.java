@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.model.Subject;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -13,7 +14,10 @@ public class SingleCorrectQuestion extends Question{
     private List<Answer> options;
     private int correctOption;
 
-    public SingleCorrectQuestion(String subject, String questionType) {
+    public SingleCorrectQuestion() {
+    }
+
+    public SingleCorrectQuestion(Subject subject, String questionType) {
         super(subject, questionType);
     }
 
