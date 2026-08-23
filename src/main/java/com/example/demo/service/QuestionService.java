@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.dto.QuestionDto;
 import com.example.demo.entity.Question;
 
 
@@ -9,4 +10,6 @@ public interface QuestionService {
     public List<Question> getAllQuestions();
 
     public List<Question> addQuestions(List<Question> questions);
+
+    public int saveQuestions(List<QuestionDto> questionDtos);
 }
