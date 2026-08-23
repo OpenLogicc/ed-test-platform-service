@@ -2,6 +2,7 @@ package com.example.demo.entity;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -10,20 +11,29 @@ import java.util.UUID;
 public class Test {
 
     @Id
+    @Column(name = "test_id")
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID testId;
 
-    @OneToMany
+    @OneToMany(mappedBy = "questionId")
     private List<Question> questions;
 
-
+    @Column(name = "test_duration")
     private Integer testDuration; // in seconds
 
+    @Column(name = "test_name")
     private String testName;
 
+    @Column(name = "test_type")
     private String testType;
 
+    @ElementCollection
+    @CollectionTable(joinColumns = @JoinColumn(name = "test_id"))
+    @Column(name = "group_id")
     private List<String> visibleTo;
+
+    @Column(name = "created_on")
+    private LocalDate createdOn;
 
     public UUID getTestId() {
         return testId;
