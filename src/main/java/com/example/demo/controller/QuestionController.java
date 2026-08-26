@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.QuestionDto;
+import com.example.demo.dto.SingleCorrectQuestionDto;
 import com.example.demo.entity.Question;
+import com.example.demo.entity.SingleCorrectQuestion;
 import com.example.demo.service.QuestionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +27,7 @@ public class QuestionController {
     }
 
     @GetMapping("/all")
-    public List<Question> getAllQuestions(){
+    public List<SingleCorrectQuestion> getAllQuestions(){
         return questionService.getAllQuestions();
     }
 
@@ -35,9 +37,9 @@ public class QuestionController {
     }
 
     @PostMapping("/question-bank/add")
-    public String saveQuestions(@RequestBody List<QuestionDto> questionDtos) {
+    public String saveSCQQuestions(@RequestBody List<SingleCorrectQuestionDto> questionDtos) {
         LOGGER.info("Request to persist {} questions received", questionDtos.size());
-        int questionsSaved = questionService.saveQuestions(questionDtos);
+        int questionsSaved = questionService.saveSingleCorrectQuestions(questionDtos);
         return questionsSaved + " Questions Saved successfully in Question Bank";
     }
 }

@@ -1,9 +1,8 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.demo.model.BinaryClassifier;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import jakarta.persistence.*;
 
 import java.util.UUID;
 
@@ -14,6 +13,13 @@ public class Answer {
     private UUID answerId;
 
     private String answerDescription;
+
+    private BinaryClassifier isCorrect;
+
+    @JsonBackReference
+    @ManyToOne
+    @JoinColumn(name = "question_id")
+    private SingleCorrectQuestion question;
 
     public Answer(String answerDescription) {
         this.answerDescription = answerDescription;
@@ -33,5 +39,25 @@ public class Answer {
 
     public void setAnswerDescription(String answerDescription) {
         this.answerDescription = answerDescription;
+    }
+
+    public BinaryClassifier getIsCorrect() {
+        return isCorrect;
+    }
+
+    public void setIsCorrect(BinaryClassifier isCorrect) {
+        this.isCorrect = isCorrect;
+    }
+
+    public void setAnswerId(UUID answerId) {
+        this.answerId = answerId;
+    }
+
+    public SingleCorrectQuestion getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(SingleCorrectQuestion question) {
+        this.question = question;
     }
 }

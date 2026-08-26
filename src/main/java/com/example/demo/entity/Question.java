@@ -15,6 +15,7 @@ import java.util.UUID;
                 columnNames = {"question_id", "version"}
         )
 )
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -24,7 +25,7 @@ public class Question {
     private String questionDescription;
 
     @Enumerated(value = EnumType.STRING)
-    private QuestionDifficulty difficulty;
+    private QuestionDifficulty questionDifficulty;
 
     @ElementCollection
     private List<String> tags;
@@ -55,7 +56,7 @@ public class Question {
     }
 
     public QuestionDifficulty getDifficulty() {
-        return difficulty;
+        return questionDifficulty;
     }
 
     public List<String> getTags() {
@@ -72,8 +73,12 @@ public class Question {
         this.questionDescription = questionDescription;
     }
 
-    public void setDifficulty(QuestionDifficulty difficulty) {
-        this.difficulty = difficulty;
+    public void setQuestionDifficulty(QuestionDifficulty difficulty) {
+        this.questionDifficulty = difficulty;
+    }
+
+    public QuestionDifficulty getQuestionDifficulty() {
+        return questionDifficulty;
     }
 
     public void setTags(List<String> tags) {
