@@ -26,14 +26,14 @@ public class AuthService {
             throw new RuntimeException("Mobile number is already registered.");
         }
 
-        User user = User.builder()
-                .fullName(request.getFullName())
-                .email(request.getEmail())
-                .mobileNumber(request.getMobileNumber())
-                .password(passwordEncoder.encode(request.getPassword()))
-                .targetGoal(request.getTargetGoal())
-                .targetExamYear(request.getTargetExamYear())
-                .build();
+        User user = new User();
+
+        user.setFullName(request.getFullName());
+        user.setEmail(request.getEmail());
+        user.setMobileNumber(request.getMobileNumber());
+        user.setPassword(passwordEncoder.encode(request.getPassword()));
+        user.setTargetGoal(request.getTargetGoal());
+        user.setTargetExamYear(request.getTargetExamYear());
 
         userRepository.save(user);
 

@@ -47,7 +47,7 @@ public class QuestionData implements CommandLineRunner {
         question.setDifficulty(QuestionDifficulty.EASY);
         question.setTags(List.of("organic chemistry", "goc"));
         question.setOptions(options1);
-        question.setCorrectOption(correctAnswerIndex1);
+        question.setCorrectOption("A");
         question.setCreatedOn(LocalDate.now());
 
         questionRepository.save(question);
