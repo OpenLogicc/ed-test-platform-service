@@ -12,7 +12,7 @@ public class SingleCorrectQuestion extends Question{
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Answer> options;
-    private int correctOption;
+    private String correctOption;
 
     public SingleCorrectQuestion() {
     }
@@ -25,7 +25,7 @@ public class SingleCorrectQuestion extends Question{
         return options;
     }
 
-    public int getCorrectOption() {
+    public String getCorrectOption() {
         return correctOption;
     }
 
@@ -33,7 +33,7 @@ public class SingleCorrectQuestion extends Question{
         this.options = options;
     }
 
-    public void setCorrectOption(int correctOption) {
+    public void setCorrectOption(String correctOption) {
         this.correctOption = correctOption;
     }
 }

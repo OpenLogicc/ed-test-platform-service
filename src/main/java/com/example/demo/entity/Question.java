@@ -15,6 +15,7 @@ import java.util.UUID;
                 columnNames = {"question_id", "version"}
         )
 )
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
