@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import com.example.demo.model.Subject;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -10,9 +11,9 @@ import java.util.List;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class SingleCorrectQuestion extends Question{
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @JsonManagedReference
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
     private List<Answer> options;
-    private String correctOption;
 
     public SingleCorrectQuestion() {
     }
@@ -25,15 +26,7 @@ public class SingleCorrectQuestion extends Question{
         return options;
     }
 
-    public String getCorrectOption() {
-        return correctOption;
-    }
-
     public void setOptions(List<Answer> options) {
         this.options = options;
-    }
-
-    public void setCorrectOption(String correctOption) {
-        this.correctOption = correctOption;
     }
 }

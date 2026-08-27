@@ -1,14 +1,13 @@
 package com.example.demo.dto;
 
 import com.example.demo.entity.Answer;
+import com.example.demo.model.BinaryClassifier;
 
 import java.util.List;
 import java.util.UUID;
 
 public class SingleCorrectQuestionDto extends QuestionDto{
     private List<Answer> options;
-
-    private UUID correctAnswer;
 
     public SingleCorrectQuestionDto() {
     }
@@ -21,17 +20,9 @@ public class SingleCorrectQuestionDto extends QuestionDto{
         this.options = options;
     }
 
-    public UUID getCorrectAnswer() {
-        return correctAnswer;
-    }
-
-    public void setCorrectAnswer(UUID correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }
-
     public Answer correctAnswer() {
         return options.stream()
-                .filter(answer -> answer.getAnswerId() == correctAnswer)
+                .filter(answer -> answer.getIsCorrect() == BinaryClassifier.YES)
                 .findFirst()
                 .get();
     }

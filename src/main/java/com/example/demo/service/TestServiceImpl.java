@@ -36,7 +36,7 @@ public class TestServiceImpl implements TestService {
             List <String> tags = new ArrayList<>();
             tags.add(questionTopics.get(i));
             question.setTags(tags);
-            question.setDifficulty(difficultyList.get(i));
+            question.setQuestionDifficulty(difficultyList.get(i));
             questions.add(question);
         }
         test.setQuestions(questions);

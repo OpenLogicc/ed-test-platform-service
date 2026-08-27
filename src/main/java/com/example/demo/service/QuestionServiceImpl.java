@@ -3,6 +3,7 @@ package com.example.demo.service;
 import com.example.demo.dto.QuestionDto;
 import com.example.demo.dto.SingleCorrectQuestionDto;
 import com.example.demo.entity.Question;
+import com.example.demo.entity.SingleCorrectQuestion;
 import com.example.demo.mapper.QuestionMapper;
 import com.example.demo.mapper.SingleCorrectQuestionMapper;
 import com.example.demo.repository.QuestionRepository;
@@ -25,8 +26,8 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     @Override
-    public List<Question> getAllQuestions() {
-        return questionRepositpry.findAll();
+    public List<SingleCorrectQuestion> getAllQuestions() {
+        return questionRepositpry.findAllSingleCorrectQuestions();
     }
 
     @Override
@@ -47,10 +48,16 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     private Question convertDtoToQuestion(SingleCorrectQuestionDto dto) {
-        Question question = questionMapper.toEntity(dto);
+        SingleCorrectQuestion question = questionMapper.toEntity(dto);
+        question.setQuestionDifficulty(dto.getQuestionDifficulty());
         question.setCreatedOn(LocalDate.now());
         if (CollectionUtil.isNullOrEmpty(question.getTags())) {
             question.setTags(determineQuestionTags(question.getQuestionDescription()));
+        }
+        if (!CollectionUtil.isNullOrEmpty(question.getOptions())) {
+            question.getOptions().forEach(answer -> {
+                answer.setQuestion(question);
+            });
         }
         return question;
     }
