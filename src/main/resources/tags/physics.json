@@ -1,0 +1,1635 @@
+[
+  {"word":"rotation","tag":"rotational motion","score":100},
+  {"word":"rotational","tag":"rotational motion","score":100},
+  {"word":"angular velocity","tag":"rotational motion","score":100},
+  {"word":"angular acceleration","tag":"rotational motion","score":100},
+  {"word":"angular displacement","tag":"rotational motion","score":95},
+  {"word":"angular speed","tag":"rotational motion","score":95},
+  {"word":"axis of rotation","tag":"rotational motion","score":90},
+  {"word":"fixed axis","tag":"rotational motion","score":80},
+  {"word":"rigid body","tag":"rotational motion","score":85},
+  {"word":"rigid body rotation","tag":"rotational motion","score":100},
+  {"word":"rotating body","tag":"rotational motion","score":90},
+  {"word":"rotating disc","tag":"rotational motion","score":90},
+  {"word":"rotating rod","tag":"rotational motion","score":85},
+  {"word":"rotating cylinder","tag":"rotational motion","score":85},
+  {"word":"radian","tag":"rotational motion","score":75},
+  {"word":"radians","tag":"rotational motion","score":75},
+  {"word":"angular position","tag":"rotational motion","score":90},
+  {"word":"angular frequency","tag":"rotational motion","score":85},
+  {"word":"omega","tag":"rotational motion","score":75},
+  {"word":"alpha","tag":"rotational motion","score":75},
+
+  {"word":"torque","tag":"torque","score":100},
+  {"word":"moment of force","tag":"torque","score":100},
+  {"word":"turning effect","tag":"torque","score":80},
+  {"word":"couple","tag":"torque","score":90},
+  {"word":"couple of forces","tag":"torque","score":100},
+  {"word":"moment of a couple","tag":"torque","score":100},
+  {"word":"lever arm","tag":"torque","score":90},
+  {"word":"moment arm","tag":"torque","score":90},
+  {"word":"line of action","tag":"torque","score":75},
+  {"word":"net torque","tag":"torque","score":100},
+  {"word":"resultant torque","tag":"torque","score":90},
+  {"word":"torque about an axis","tag":"torque","score":100},
+  {"word":"torque equilibrium","tag":"torque","score":95},
+  {"word":"clockwise torque","tag":"torque","score":90},
+  {"word":"anticlockwise torque","tag":"torque","score":90},
+  {"word":"counterclockwise torque","tag":"torque","score":90},
+
+  {"word":"moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"mass moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"rotational inertia","tag":"moment of inertia","score":95},
+  {"word":"radius of gyration","tag":"moment of inertia","score":100},
+  {"word":"gyration","tag":"moment of inertia","score":85},
+  {"word":"parallel axis theorem","tag":"moment of inertia","score":100},
+  {"word":"theorem of parallel axes","tag":"moment of inertia","score":100},
+  {"word":"perpendicular axis theorem","tag":"moment of inertia","score":100},
+  {"word":"theorem of perpendicular axes","tag":"moment of inertia","score":100},
+  {"word":"rod moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"disc moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"ring moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"hoop moment of inertia","tag":"moment of inertia","score":95},
+  {"word":"cylinder moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"sphere moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"solid sphere","tag":"moment of inertia","score":55},
+  {"word":"hollow sphere","tag":"moment of inertia","score":75},
+  {"word":"thin ring","tag":"moment of inertia","score":90},
+  {"word":"thin rod","tag":"moment of inertia","score":80},
+  {"word":"uniform rod","tag":"moment of inertia","score":80},
+  {"word":"uniform disc","tag":"moment of inertia","score":80},
+  {"word":"uniform cylinder","tag":"moment of inertia","score":80},
+  {"word":"lamina","tag":"moment of inertia","score":75},
+  {"word":"composite body","tag":"moment of inertia","score":80},
+
+  {"word":"rolling","tag":"rolling motion","score":100},
+  {"word":"rolling motion","tag":"rolling motion","score":100},
+  {"word":"rolls without slipping","tag":"rolling motion","score":100},
+  {"word":"rolling without slipping","tag":"rolling motion","score":100},
+  {"word":"pure rolling","tag":"rolling motion","score":100},
+  {"word":"rolling condition","tag":"rolling motion","score":95},
+  {"word":"no slipping","tag":"rolling motion","score":95},
+  {"word":"without slipping","tag":"rolling motion","score":95},
+  {"word":"slipping","tag":"rolling motion","score":85},
+  {"word":"rolling with slipping","tag":"rolling motion","score":100},
+  {"word":"point of contact","tag":"rolling motion","score":75},
+  {"word":"instantaneous axis","tag":"rolling motion","score":85},
+  {"word":"instantaneous centre","tag":"rolling motion","score":90},
+  {"word":"instantaneous center","tag":"rolling motion","score":90},
+  {"word":"rolling cylinder","tag":"rolling motion","score":95},
+  {"word":"rolling disc","tag":"rolling motion","score":95},
+  {"word":"rolling sphere","tag":"rolling motion","score":95},
+  {"word":"rolling ring","tag":"rolling motion","score":90},
+  {"word":"rolling body","tag":"rolling motion","score":90},
+  {"word":"inclined plane rolling","tag":"rolling motion","score":100},
+  {"word":"sphere rolls","tag":"rolling motion","score":95},
+  {"word":"disc rolls","tag":"rolling motion","score":95},
+  {"word":"cylinder rolls","tag":"rolling motion","score":95},
+  {"word":"angular velocity of rolling","tag":"rolling motion","score":95},
+  {"word":"linear velocity of rolling","tag":"rolling motion","score":85},
+  {"word":"v = omega r","tag":"rolling motion","score":100},
+
+  {"word":"angular momentum","tag":"angular momentum","score":100},
+  {"word":"momentum about an axis","tag":"angular momentum","score":90},
+  {"word":"orbital angular momentum","tag":"angular momentum","score":90},
+  {"word":"spin angular momentum","tag":"angular momentum","score":90},
+  {"word":"conservation of angular momentum","tag":"angular momentum","score":100},
+  {"word":"angular impulse","tag":"angular momentum","score":100},
+  {"word":"angular impulse-momentum","tag":"angular momentum","score":100},
+  {"word":"external torque","tag":"angular momentum","score":80},
+  {"word":"zero external torque","tag":"angular momentum","score":95},
+  {"word":"no external torque","tag":"angular momentum","score":95},
+  {"word":"rotational collision","tag":"angular momentum","score":90},
+  {"word":"spinning disc","tag":"angular momentum","score":80},
+  {"word":"spinning wheel","tag":"angular momentum","score":80},
+  {"word":"person on rotating platform","tag":"angular momentum","score":100},
+  {"word":"man on rotating platform","tag":"angular momentum","score":100},
+  {"word":"skater","tag":"angular momentum","score":90},
+  {"word":"skater pulls arms","tag":"angular momentum","score":100},
+
+  {"word":"rotational dynamics","tag":"rotational dynamics","score":100},
+  {"word":"tau = I alpha","tag":"rotational dynamics","score":100},
+  {"word":"torque equals I alpha","tag":"rotational dynamics","score":100},
+  {"word":"equation of rotational motion","tag":"rotational dynamics","score":95},
+  {"word":"dynamics of rotation","tag":"rotational dynamics","score":100},
+  {"word":"force and torque","tag":"rotational dynamics","score":80},
+  {"word":"translational and rotational motion","tag":"rotational dynamics","score":85},
+  {"word":"rolling dynamics","tag":"rotational dynamics","score":80},
+  {"word":"rotational kinetic energy","tag":"rotational dynamics","score":90},
+  {"word":"rotational work","tag":"rotational dynamics","score":85},
+  {"word":"rotational power","tag":"rotational dynamics","score":85},
+
+  {"word":"rotational kinetic energy","tag":"rotational energy","score":100},
+  {"word":"kinetic energy of rotation","tag":"rotational energy","score":100},
+  {"word":"energy of rotation","tag":"rotational energy","score":90},
+  {"word":"rotational energy","tag":"rotational energy","score":95},
+  {"word":"rolling kinetic energy","tag":"rotational energy","score":95},
+  {"word":"translational kinetic energy","tag":"rotational energy","score":65},
+  {"word":"total kinetic energy","tag":"rotational energy","score":75},
+  {"word":"work done by torque","tag":"rotational energy","score":100},
+  {"word":"work done by a torque","tag":"rotational energy","score":100},
+  {"word":"work torque","tag":"rotational energy","score":90},
+  {"word":"power due to torque","tag":"rotational energy","score":100},
+  {"word":"power in rotational motion","tag":"rotational energy","score":100},
+
+  {"word":"centre of mass","tag":"centre of mass","score":100},
+  {"word":"center of mass","tag":"centre of mass","score":100},
+  {"word":"centre of mass of a rod","tag":"centre of mass","score":100},
+  {"word":"center of mass of a rod","tag":"centre of mass","score":100},
+  {"word":"centre of mass of a disc","tag":"centre of mass","score":95},
+  {"word":"center of mass of a disc","tag":"centre of mass","score":95},
+  {"word":"centre of mass of a system","tag":"centre of mass","score":100},
+  {"word":"center of mass of a system","tag":"centre of mass","score":100},
+  {"word":"mass distribution","tag":"centre of mass","score":75},
+  {"word":"composite lamina","tag":"centre of mass","score":80},
+  {"word":"balance point","tag":"centre of mass","score":70},
+
+  {"word":"static equilibrium","tag":"rotational equilibrium","score":90},
+  {"word":"rotational equilibrium","tag":"rotational equilibrium","score":100},
+  {"word":"equilibrium of rigid body","tag":"rotational equilibrium","score":100},
+  {"word":"balanced","tag":"rotational equilibrium","score":65},
+  {"word":"balance","tag":"rotational equilibrium","score":55},
+  {"word":"uniform rod in equilibrium","tag":"rotational equilibrium","score":100},
+  {"word":"rod balanced","tag":"rotational equilibrium","score":90},
+  {"word":"beam in equilibrium","tag":"rotational equilibrium","score":90},
+  {"word":"ladder equilibrium","tag":"rotational equilibrium","score":95},
+  {"word":"ladder against wall","tag":"rotational equilibrium","score":85},
+  {"word":"rod hinged","tag":"rotational equilibrium","score":80},
+  {"word":"hinged rod","tag":"rotational equilibrium","score":90},
+  {"word":"hinge","tag":"rotational equilibrium","score":65},
+  {"word":"support reaction","tag":"rotational equilibrium","score":70},
+  {"word":"reaction at hinge","tag":"rotational equilibrium","score":90},
+
+  {"word":"friction at contact","tag":"friction in rolling","score":85},
+  {"word":"friction at point of contact","tag":"friction in rolling","score":95},
+  {"word":"friction on rolling","tag":"friction in rolling","score":90},
+  {"word":"friction during rolling","tag":"friction in rolling","score":95},
+  {"word":"static friction during rolling","tag":"friction in rolling","score":100},
+  {"word":"coefficient of friction","tag":"friction in rolling","score":70},
+  {"word":"minimum coefficient of friction","tag":"friction in rolling","score":85},
+  {"word":"maximum coefficient of friction","tag":"friction in rolling","score":80},
+  {"word":"impending slipping","tag":"friction in rolling","score":95},
+  {"word":"tendency to slip","tag":"friction in rolling","score":95},
+
+  {"word":"inclined plane","tag":"rolling motion","score":65},
+  {"word":"inclined surface","tag":"rolling motion","score":55},
+  {"word":"down an inclined plane","tag":"rolling motion","score":80},
+  {"word":"up an inclined plane","tag":"rolling motion","score":80},
+  {"word":"roll down","tag":"rolling motion","score":85},
+  {"word":"rolls down","tag":"rolling motion","score":85},
+  {"word":"rolling down","tag":"rolling motion","score":95},
+  {"word":"accelerates down an inclined plane","tag":"rolling motion","score":80},
+
+  {"word":"gyroscope","tag":"gyroscope","score":100},
+  {"word":"gyroscopic motion","tag":"gyroscope","score":100},
+  {"word":"precession","tag":"gyroscope","score":100},
+  {"word":"precessional angular velocity","tag":"gyroscope","score":100},
+  {"word":"gyroscopic torque","tag":"gyroscope","score":100},
+  {"word":"spinning top","tag":"gyroscope","score":95},
+  {"word":"flywheel","tag":"rotational dynamics","score":90},
+  {"word":"rotor","tag":"rotational dynamics","score":75},
+  {"word":"turntable","tag":"rotational motion","score":80},
+  {"word":"rotating platform","tag":"rotational motion","score":90},
+  {"word":"massive pulley","tag":"rotational dynamics","score":95},
+  {"word":"pulley has moment of inertia","tag":"moment of inertia","score":100},
+  {"word":"pulley rotates","tag":"rotational dynamics","score":90},
+  {"word":"string wound around disc","tag":"rotational dynamics","score":95},
+  {"word":"string wound around cylinder","tag":"rotational dynamics","score":95},
+  {"word":"spool","tag":"rotational dynamics","score":85},
+  {"word":"yo-yo","tag":"rotational dynamics","score":90},
+  {"word":"rolling spool","tag":"rolling motion","score":95},
+  {"word":"rolling yo-yo","tag":"rolling motion","score":95},
+
+  {"word":"L = I omega","tag":"angular momentum","score":100},
+  {"word":"tau = r cross f","tag":"torque","score":100},
+  {"word":"tau = r x f","tag":"torque","score":100},
+  {"word":"one half I omega squared","tag":"rotational energy","score":100},
+  {"word":"1/2 I omega^2","tag":"rotational energy","score":100},
+  {"word":"I alpha","tag":"rotational dynamics","score":90},
+  {"word":"moment of inertia tensor","tag":"moment of inertia","score":100},
+  {
+    "word": "kinematics",
+    "tag": "kinematics",
+    "score": 100
+  },
+  {
+    "word": "motion",
+    "tag": "kinematics",
+    "score": 55
+  },
+  {
+    "word": "displacement",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "distance",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "position",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "velocity",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "speed",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "acceleration",
+    "tag": "kinematics",
+    "score": 50
+  },
+  {
+    "word": "instantaneous velocity",
+    "tag": "kinematics",
+    "score": 60
+  },
+  {
+    "word": "instantaneous acceleration",
+    "tag": "kinematics",
+    "score": 60
+  },
+  {
+    "word": "average velocity",
+    "tag": "kinematics",
+    "score": 95
+  },
+  {
+    "word": "average speed",
+    "tag": "kinematics",
+    "score": 90
+  },
+  {
+    "word": "relative velocity",
+    "tag": "relative motion",
+    "score": 100
+  },
+  {
+    "word": "relative motion",
+    "tag": "relative motion",
+    "score": 100
+  },
+  {
+    "word": "relative acceleration",
+    "tag": "relative motion",
+    "score": 95
+  },
+  {
+    "word": "rain man problem",
+    "tag": "relative motion",
+    "score": 95
+  },
+  {
+    "word": "boat and river",
+    "tag": "relative motion",
+    "score": 90
+  },
+  {
+    "word": "river crossing",
+    "tag": "relative motion",
+    "score": 95
+  },
+  {
+    "word": "projectile",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "projectile motion",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "horizontal projection",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "horizontal projectile",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "angle of projection",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "oblique projection",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "trajectory",
+    "tag": "projectile motion",
+    "score": 95
+  },
+  {
+    "word": "range of projectile",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "maximum height",
+    "tag": "projectile motion",
+    "score": 80
+  },
+  {
+    "word": "time of flight",
+    "tag": "projectile motion",
+    "score": 85
+  },
+  {
+    "word": "equation of trajectory",
+    "tag": "projectile motion",
+    "score": 100
+  },
+  {
+    "word": "uniform motion",
+    "tag": "1D motion",
+    "score": 95
+  },
+  {
+    "word": "uniformly accelerated",
+    "tag": "1D motion",
+    "score": 95
+  },
+  {
+    "word": "uniform acceleration",
+    "tag": "1D motion",
+    "score": 95
+  },
+  {
+    "word": "straight line motion",
+    "tag": "1D motion",
+    "score": 100
+  },
+  {
+    "word": "rectilinear motion",
+    "tag": "1D motion",
+    "score": 100
+  },
+  {
+    "word": "one dimensional motion",
+    "tag": "1D motion",
+    "score": 100
+  },
+  {
+    "word": "position time graph",
+    "tag": "graphs in kinematics",
+    "score": 100
+  },
+  {
+    "word": "velocity time graph",
+    "tag": "graphs in kinematics",
+    "score": 100
+  },
+  {
+    "word": "acceleration time graph",
+    "tag": "graphs in kinematics",
+    "score": 100
+  },
+  {
+    "word": "x-t graph",
+    "tag": "graphs in kinematics",
+    "score": 95
+  },
+  {
+    "word": "v-t graph",
+    "tag": "graphs in kinematics",
+    "score": 95
+  },
+  {
+    "word": "a-t graph",
+    "tag": "graphs in kinematics",
+    "score": 95
+  },
+  {
+    "word": "slope of velocity time graph",
+    "tag": "graphs in kinematics",
+    "score": 100
+  },
+  {
+    "word": "area under velocity time graph",
+    "tag": "graphs in kinematics",
+    "score": 100
+  },
+  {
+    "word": "area under acceleration time graph",
+    "tag": "graphs in kinematics",
+    "score": 95
+  },
+  {
+    "word": "equations of motion",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "equation of motion",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "v = u + at",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "s = ut + 1/2at^2",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "v^2 = u^2 + 2as",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "nth second",
+    "tag": "kinematic equations",
+    "score": 90
+  },
+  {
+    "word": "distance in nth second",
+    "tag": "kinematic equations",
+    "score": 100
+  },
+  {
+    "word": "free fall",
+    "tag": "vertical motion",
+    "score": 100
+  },
+  {
+    "word": "freely falling",
+    "tag": "vertical motion",
+    "score": 100
+  },
+  {
+    "word": "vertical motion",
+    "tag": "vertical motion",
+    "score": 95
+  },
+  {
+    "word": "motion under gravity",
+    "tag": "vertical motion",
+    "score": 100
+  },
+  {
+    "word": "falling body",
+    "tag": "vertical motion",
+    "score": 85
+  },
+  {
+    "word": "upward projection",
+    "tag": "vertical motion",
+    "score": 90
+  },
+  {
+    "word": "body thrown vertically upward",
+    "tag": "vertical motion",
+    "score": 100
+  },
+  {
+    "word": "stopping distance",
+    "tag": "kinematics",
+    "score": 85
+  },
+  {
+    "word": "braking distance",
+    "tag": "kinematics",
+    "score": 90
+  },
+  {
+    "word": "acceleration due to gravity",
+    "tag": "vertical motion",
+    "score": 75
+  },
+  {
+    "word": "newton's laws",
+    "tag": "newton's laws",
+    "score": 100
+  },
+  {
+    "word": "newton laws",
+    "tag": "newton's laws",
+    "score": 100
+  },
+  {
+    "word": "newton's first law",
+    "tag": "newton's laws",
+    "score": 100
+  },
+  {
+    "word": "first law",
+    "tag": "newton's laws",
+    "score": 90
+  },
+  {
+    "word": "newton's second law",
+    "tag": "newton's laws",
+    "score": 100
+  },
+  {
+    "word": "second law",
+    "tag": "newton's laws",
+    "score": 90
+  },
+  {
+    "word": "newton's third law",
+    "tag": "newton's laws",
+    "score": 100
+  },
+  {
+    "word": "third law",
+    "tag": "newton's laws",
+    "score": 90
+  },
+  {
+    "word": "force",
+    "tag": "force",
+    "score": 75
+  },
+  {
+    "word": "net force",
+    "tag": "force",
+    "score": 100
+  },
+  {
+    "word": "resultant force",
+    "tag": "force",
+    "score": 95
+  },
+  {
+    "word": "external force",
+    "tag": "force",
+    "score": 80
+  },
+  {
+    "word": "free body diagram",
+    "tag": "free body diagram",
+    "score": 100
+  },
+  {
+    "word": "fbd",
+    "tag": "free body diagram",
+    "score": 95
+  },
+  {
+    "word": "free-body diagram",
+    "tag": "free body diagram",
+    "score": 100
+  },
+  {
+    "word": "normal reaction",
+    "tag": "normal reaction",
+    "score": 100
+  },
+  {
+    "word": "normal force",
+    "tag": "normal reaction",
+    "score": 100
+  },
+  {
+    "word": "normal contact force",
+    "tag": "normal reaction",
+    "score": 100
+  },
+  {
+    "word": "tension",
+    "tag": "tension",
+    "score": 85
+  },
+  {
+    "word": "tension in string",
+    "tag": "tension",
+    "score": 100
+  },
+  {
+    "word": "tension force",
+    "tag": "tension",
+    "score": 95
+  },
+  {
+    "word": "friction",
+    "tag": "friction",
+    "score": 85
+  },
+  {
+    "word": "frictional force",
+    "tag": "friction",
+    "score": 95
+  },
+  {
+    "word": "static friction",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "kinetic friction",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "limiting friction",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "coefficient of friction",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "angle of friction",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "angle of repose",
+    "tag": "friction",
+    "score": 100
+  },
+  {
+    "word": "frictionless",
+    "tag": "friction",
+    "score": 80
+  },
+  {
+    "word": "rough surface",
+    "tag": "friction",
+    "score": 75
+  },
+  {
+    "word": "rough horizontal surface",
+    "tag": "friction",
+    "score": 90
+  },
+  {
+    "word": "rough inclined plane",
+    "tag": "friction",
+    "score": 90
+  },
+  {
+    "word": "inclined plane",
+    "tag": "inclined plane",
+    "score": 80
+  },
+  {
+    "word": "block on incline",
+    "tag": "inclined plane",
+    "score": 100
+  },
+  {
+    "word": "wedge",
+    "tag": "wedge",
+    "score": 100
+  },
+  {
+    "word": "wedge problem",
+    "tag": "wedge",
+    "score": 100
+  },
+  {
+    "word": "accelerating wedge",
+    "tag": "wedge",
+    "score": 100
+  },
+  {
+    "word": "pulley",
+    "tag": "connected bodies",
+    "score": 65
+  },
+  {
+    "word": "string and pulley",
+    "tag": "connected bodies",
+    "score": 90
+  },
+  {
+    "word": "connected blocks",
+    "tag": "connected bodies",
+    "score": 100
+  },
+  {
+    "word": "two blocks",
+    "tag": "connected bodies",
+    "score": 65
+  },
+  {
+    "word": "system of blocks",
+    "tag": "connected bodies",
+    "score": 90
+  },
+  {
+    "word": "atwood machine",
+    "tag": "connected bodies",
+    "score": 100
+  },
+  {
+    "word": "atwood's machine",
+    "tag": "connected bodies",
+    "score": 100
+  },
+  {
+    "word": "pseudo force",
+    "tag": "pseudo force",
+    "score": 100
+  },
+  {
+    "word": "pseudo-force",
+    "tag": "pseudo force",
+    "score": 100
+  },
+  {
+    "word": "non inertial frame",
+    "tag": "non-inertial frame",
+    "score": 100
+  },
+  {
+    "word": "non-inertial frame",
+    "tag": "non-inertial frame",
+    "score": 100
+  },
+  {
+    "word": "accelerating frame",
+    "tag": "non-inertial frame",
+    "score": 100
+  },
+  {
+    "word": "fictitious force",
+    "tag": "non-inertial frame",
+    "score": 100
+  },
+  {
+    "word": "centrifugal force",
+    "tag": "pseudo force",
+    "score": 100
+  },
+  {
+    "word": "centrifugal",
+    "tag": "pseudo force",
+    "score": 90
+  },
+  {
+    "word": "elevator",
+    "tag": "lift and elevator",
+    "score": 100
+  },
+  {
+    "word": "lift",
+    "tag": "lift and elevator",
+    "score": 80
+  },
+  {
+    "word": "weighing machine",
+    "tag": "lift and elevator",
+    "score": 90
+  },
+  {
+    "word": "apparent weight",
+    "tag": "lift and elevator",
+    "score": 100
+  },
+  {
+    "word": "constraint force",
+    "tag": "constraint forces",
+    "score": 95
+  },
+  {
+    "word": "constraint",
+    "tag": "constraint forces",
+    "score": 70
+  },
+  {
+    "word": "rope",
+    "tag": "tension",
+    "score": 60
+  },
+  {
+    "word": "string",
+    "tag": "tension",
+    "score": 50
+  },
+  {
+    "word": "work",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "work done",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "work-energy theorem",
+    "tag": "work energy theorem",
+    "score": 100
+  },
+  {
+    "word": "work energy theorem",
+    "tag": "work energy theorem",
+    "score": 100
+  },
+  {
+    "word": "work done by force",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "variable force",
+    "tag": "work",
+    "score": 85
+  },
+  {
+    "word": "force displacement graph",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "force-displacement graph",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "area under force displacement graph",
+    "tag": "work",
+    "score": 100
+  },
+  {
+    "word": "dot product",
+    "tag": "work",
+    "score": 65
+  },
+  {
+    "word": "conservative force",
+    "tag": "conservative forces",
+    "score": 100
+  },
+  {
+    "word": "conservative forces",
+    "tag": "conservative forces",
+    "score": 100
+  },
+  {
+    "word": "non-conservative force",
+    "tag": "non-conservative forces",
+    "score": 100
+  },
+  {
+    "word": "non conservative",
+    "tag": "non-conservative forces",
+    "score": 90
+  },
+  {
+    "word": "potential energy",
+    "tag": "potential energy",
+    "score": 100
+  },
+  {
+    "word": "potential energy function",
+    "tag": "potential energy",
+    "score": 100
+  },
+  {
+    "word": "potential energy curve",
+    "tag": "potential energy",
+    "score": 100
+  },
+  {
+    "word": "potential energy vs position",
+    "tag": "potential energy",
+    "score": 100
+  },
+  {
+    "word": "kinetic energy",
+    "tag": "kinetic energy",
+    "score": 100
+  },
+  {
+    "word": "translational kinetic energy",
+    "tag": "kinetic energy",
+    "score": 95
+  },
+  {
+    "word": "mechanical energy",
+    "tag": "mechanical energy",
+    "score": 100
+  },
+  {
+    "word": "mechanical energy conservation",
+    "tag": "mechanical energy",
+    "score": 100
+  },
+  {
+    "word": "conservation of mechanical energy",
+    "tag": "mechanical energy",
+    "score": 100
+  },
+  {
+    "word": "conservation of energy",
+    "tag": "energy conservation",
+    "score": 80
+  },
+  {
+    "word": "energy conservation",
+    "tag": "energy conservation",
+    "score": 100
+  },
+  {
+    "word": "total energy",
+    "tag": "energy conservation",
+    "score": 75
+  },
+  {
+    "word": "spring potential energy",
+    "tag": "spring energy",
+    "score": 100
+  },
+  {
+    "word": "energy stored in spring",
+    "tag": "spring energy",
+    "score": 100
+  },
+  {
+    "word": "spring compression",
+    "tag": "spring energy",
+    "score": 85
+  },
+  {
+    "word": "spring extension",
+    "tag": "spring energy",
+    "score": 85
+  },
+  {
+    "word": "spring block",
+    "tag": "spring energy",
+    "score": 75
+  },
+  {
+    "word": "power",
+    "tag": "power",
+    "score": 100
+  },
+  {
+    "word": "average power",
+    "tag": "power",
+    "score": 100
+  },
+  {
+    "word": "instantaneous power",
+    "tag": "power",
+    "score": 100
+  },
+  {
+    "word": "power delivered",
+    "tag": "power",
+    "score": 90
+  },
+  {
+    "word": "power of force",
+    "tag": "power",
+    "score": 95
+  },
+  {
+    "word": "efficiency",
+    "tag": "power and efficiency",
+    "score": 95
+  },
+  {
+    "word": "efficiency of machine",
+    "tag": "power and efficiency",
+    "score": 100
+  },
+  {
+    "word": "potential energy of gravity",
+    "tag": "gravitational potential energy",
+    "score": 100
+  },
+  {
+    "word": "gravitational potential energy",
+    "tag": "gravitational potential energy",
+    "score": 100
+  },
+  {
+    "word": "escape velocity",
+    "tag": "gravitational potential energy",
+    "score": 75
+  },
+  {
+    "word": "minimum speed",
+    "tag": "energy methods",
+    "score": 65
+  },
+  {
+    "word": "minimum velocity",
+    "tag": "energy methods",
+    "score": 65
+  },
+  {
+    "word": "turning point",
+    "tag": "energy methods",
+    "score": 80
+  },
+  {
+    "word": "speed at a point",
+    "tag": "energy methods",
+    "score": 80
+  },
+  {
+    "word": "work done against gravity",
+    "tag": "gravitational potential energy",
+    "score": 100
+  },
+  {
+    "word": "work done by gravity",
+    "tag": "gravitational potential energy",
+    "score": 100
+  },
+  {
+    "word": "work done by spring",
+    "tag": "spring energy",
+    "score": 100
+  },
+  {
+    "word": "force-displacement",
+    "tag": "work",
+    "score": 95
+  },
+  {
+    "word": "circular motion",
+    "tag": "circular motion",
+    "score": 100
+  },
+  {
+    "word": "uniform circular motion",
+    "tag": "circular motion",
+    "score": 100
+  },
+  {
+    "word": "non-uniform circular motion",
+    "tag": "circular motion",
+    "score": 100
+  },
+  {
+    "word": "motion in a circle",
+    "tag": "circular motion",
+    "score": 100
+  },
+  {
+    "word": "circular path",
+    "tag": "circular motion",
+    "score": 90
+  },
+  {
+    "word": "circular track",
+    "tag": "circular motion",
+    "score": 85
+  },
+  {
+    "word": "angular speed",
+    "tag": "circular motion",
+    "score": 70
+  },
+  {
+    "word": "angular velocity",
+    "tag": "circular motion",
+    "score": 70
+  },
+  {
+    "word": "centripetal force",
+    "tag": "centripetal force",
+    "score": 100
+  },
+  {
+    "word": "centripetal acceleration",
+    "tag": "centripetal force",
+    "score": 100
+  },
+  {
+    "word": "centripetal acceleration",
+    "tag": "circular motion",
+    "score": 95
+  },
+  {
+    "word": "centripetal force required",
+    "tag": "centripetal force",
+    "score": 100
+  },
+  {
+    "word": "radial force",
+    "tag": "centripetal force",
+    "score": 90
+  },
+  {
+    "word": "radial acceleration",
+    "tag": "centripetal force",
+    "score": 95
+  },
+  {
+    "word": "towards the centre",
+    "tag": "centripetal force",
+    "score": 75
+  },
+  {
+    "word": "toward the center",
+    "tag": "centripetal force",
+    "score": 75
+  },
+  {
+    "word": "centre of circle",
+    "tag": "circular motion",
+    "score": 75
+  },
+  {
+    "word": "center of circle",
+    "tag": "circular motion",
+    "score": 75
+  },
+  {
+    "word": "radius of circular path",
+    "tag": "circular motion",
+    "score": 90
+  },
+  {
+    "word": "banking",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "banking of road",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "banked road",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "angle of banking",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "banking angle",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "frictionless banked road",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "maximum speed on banked road",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "minimum speed on banked road",
+    "tag": "banking of roads",
+    "score": 100
+  },
+  {
+    "word": "vertical circle",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "vertical circular motion",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "vertical loop",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "vertical circular track",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "minimum speed at top",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "minimum speed at bottom",
+    "tag": "vertical circular motion",
+    "score": 90
+  },
+  {
+    "word": "speed at top",
+    "tag": "vertical circular motion",
+    "score": 90
+  },
+  {
+    "word": "speed at bottom",
+    "tag": "vertical circular motion",
+    "score": 90
+  },
+  {
+    "word": "loss of contact",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "string becomes slack",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "string just taut",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "tension at top",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "tension at bottom",
+    "tag": "vertical circular motion",
+    "score": 100
+  },
+  {
+    "word": "conical pendulum",
+    "tag": "conical pendulum",
+    "score": 100
+  },
+  {
+    "word": "conical pendulum",
+    "tag": "circular motion",
+    "score": 90
+  },
+  {
+    "word": "horizontal circle",
+    "tag": "circular motion",
+    "score": 90
+  },
+  {
+    "word": "whirling",
+    "tag": "circular motion",
+    "score": 85
+  },
+  {
+    "word": "stone tied to string",
+    "tag": "circular motion",
+    "score": 70
+  },
+  {
+    "word": "particle tied to string",
+    "tag": "circular motion",
+    "score": 75
+  },
+  {
+    "word": "rotating table",
+    "tag": "circular motion",
+    "score": 85
+  },
+  {
+    "word": "turntable",
+    "tag": "circular motion",
+    "score": 80
+  },
+  {
+    "word": "momentum",
+    "tag": "linear momentum",
+    "score": 100
+  },
+  {
+    "word": "linear momentum",
+    "tag": "linear momentum",
+    "score": 100
+  },
+  {
+    "word": "p = mv",
+    "tag": "linear momentum",
+    "score": 100
+  },
+  {
+    "word": "impulse",
+    "tag": "impulse",
+    "score": 100
+  },
+  {
+    "word": "impulsive force",
+    "tag": "impulse",
+    "score": 100
+  },
+  {
+    "word": "impulsive collision",
+    "tag": "impulse",
+    "score": 95
+  },
+  {
+    "word": "impulse momentum theorem",
+    "tag": "impulse",
+    "score": 100
+  },
+  {
+    "word": "impulse-momentum theorem",
+    "tag": "impulse",
+    "score": 100
+  },
+  {
+    "word": "change in momentum",
+    "tag": "linear momentum",
+    "score": 95
+  },
+  {
+    "word": "conservation of momentum",
+    "tag": "conservation of momentum",
+    "score": 100
+  },
+  {
+    "word": "conservation of linear momentum",
+    "tag": "conservation of momentum",
+    "score": 100
+  },
+  {
+    "word": "momentum conserved",
+    "tag": "conservation of momentum",
+    "score": 100
+  },
+  {
+    "word": "isolated system",
+    "tag": "conservation of momentum",
+    "score": 75
+  },
+  {
+    "word": "explosion",
+    "tag": "collisions",
+    "score": 80
+  },
+  {
+    "word": "collision",
+    "tag": "collisions",
+    "score": 85
+  },
+  {
+    "word": "elastic collision",
+    "tag": "elastic collision",
+    "score": 100
+  },
+  {
+    "word": "perfectly elastic collision",
+    "tag": "elastic collision",
+    "score": 100
+  },
+  {
+    "word": "inelastic collision",
+    "tag": "inelastic collision",
+    "score": 100
+  },
+  {
+    "word": "perfectly inelastic collision",
+    "tag": "inelastic collision",
+    "score": 100
+  },
+  {
+    "word": "coefficient of restitution",
+    "tag": "coefficient of restitution",
+    "score": 100
+  },
+  {
+    "word": "restitution",
+    "tag": "coefficient of restitution",
+    "score": 100
+  },
+  {
+    "word": "relative velocity of separation",
+    "tag": "coefficient of restitution",
+    "score": 100
+  },
+  {
+    "word": "relative velocity of approach",
+    "tag": "coefficient of restitution",
+    "score": 100
+  },
+  {
+    "word": "one dimensional collision",
+    "tag": "1D collision",
+    "score": 100
+  },
+  {
+    "word": "one-dimensional collision",
+    "tag": "1D collision",
+    "score": 100
+  },
+  {
+    "word": "head on collision",
+    "tag": "1D collision",
+    "score": 100
+  },
+  {
+    "word": "head-on collision",
+    "tag": "1D collision",
+    "score": 100
+  },
+  {
+    "word": "two body collision",
+    "tag": "1D collision",
+    "score": 90
+  },
+  {
+    "word": "collision in one dimension",
+    "tag": "1D collision",
+    "score": 100
+  },
+  {
+    "word": "oblique collision",
+    "tag": "2D collision",
+    "score": 100
+  },
+  {
+    "word": "two dimensional collision",
+    "tag": "2D collision",
+    "score": 100
+  },
+  {
+    "word": "2D collision",
+    "tag": "2D collision",
+    "score": 100
+  },
+  {
+    "word": "collision at an angle",
+    "tag": "2D collision",
+    "score": 90
+  },
+  {
+    "word": "center of mass",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "centre of mass",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "centre of mass of system",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "center of mass of system",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "position of center of mass",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "position of centre of mass",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "velocity of center of mass",
+    "tag": "center of mass motion",
+    "score": 100
+  },
+  {
+    "word": "velocity of centre of mass",
+    "tag": "center of mass motion",
+    "score": 100
+  },
+  {
+    "word": "acceleration of center of mass",
+    "tag": "center of mass motion",
+    "score": 100
+  },
+  {
+    "word": "acceleration of centre of mass",
+    "tag": "center of mass motion",
+    "score": 100
+  },
+  {
+    "word": "motion of center of mass",
+    "tag": "center of mass motion",
+    "score": 100
+  },
+  {
+    "word": "center of mass frame",
+    "tag": "center of mass frame",
+    "score": 100
+  },
+  {
+    "word": "centre of mass frame",
+    "tag": "center of mass frame",
+    "score": 100
+  },
+  {
+    "word": "center of mass reference frame",
+    "tag": "center of mass frame",
+    "score": 100
+  },
+  {
+    "word": "two particle system",
+    "tag": "center of mass",
+    "score": 90
+  },
+  {
+    "word": "three particle system",
+    "tag": "center of mass",
+    "score": 90
+  },
+  {
+    "word": "mass distribution",
+    "tag": "center of mass",
+    "score": 80
+  },
+  {
+    "word": "uniform rod",
+    "tag": "center of mass",
+    "score": 70
+  },
+  {
+    "word": "rod center of mass",
+    "tag": "center of mass",
+    "score": 95
+  },
+  {
+    "word": "disc center of mass",
+    "tag": "center of mass",
+    "score": 95
+  },
+  {
+    "word": "lamina center of mass",
+    "tag": "center of mass",
+    "score": 95
+  },
+  {
+    "word": "center of mass of rod",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "centre of mass of rod",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "center of mass of disc",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "centre of mass of disc",
+    "tag": "center of mass",
+    "score": 100
+  },
+  {
+    "word": "rocket",
+    "tag": "rocket propulsion",
+    "score": 100
+  },
+  {
+    "word": "rocket equation",
+    "tag": "rocket propulsion",
+    "score": 100
+  },
+  {
+    "word": "variable mass",
+    "tag": "rocket propulsion",
+    "score": 90
+  },
+  {
+    "word": "mass ejection",
+    "tag": "rocket propulsion",
+    "score": 95
+  },
+  {
+    "word": "recoil",
+    "tag": "recoil",
+    "score": 100
+  },
+  {
+    "word": "gun recoil",
+    "tag": "recoil",
+    "score": 100
+  },
+  {
+    "word": "bullet and block",
+    "tag": "collisions",
+    "score": 90
+  },
+  {
+    "word": "ballistic pendulum",
+    "tag": "collisions",
+    "score": 100
+  }
+]
