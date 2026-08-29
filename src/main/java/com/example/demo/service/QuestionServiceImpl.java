@@ -1,10 +1,8 @@
 package com.example.demo.service;
 
-import com.example.demo.dto.QuestionDto;
 import com.example.demo.dto.SingleCorrectQuestionDto;
 import com.example.demo.entity.Question;
 import com.example.demo.entity.SingleCorrectQuestion;
-import com.example.demo.mapper.QuestionMapper;
 import com.example.demo.mapper.SingleCorrectQuestionMapper;
 import com.example.demo.repository.QuestionRepository;
 import com.example.demo.util.CollectionUtil;
@@ -16,23 +14,26 @@ import java.util.List;
 
 @Service
 public class QuestionServiceImpl implements QuestionService{
-    private final QuestionRepository questionRepositpry;
+    private final QuestionRepository questionRepository;
 
     private final SingleCorrectQuestionMapper questionMapper;
 
-    public QuestionServiceImpl(QuestionRepository questionRepositpry, SingleCorrectQuestionMapper questionMapper) {
-        this.questionRepositpry = questionRepositpry;
+    private final TextClassifierService textClassifierService;
+
+    public QuestionServiceImpl(QuestionRepository questionRepository, SingleCorrectQuestionMapper questionMapper, TextClassifierService textClassifierService) {
+        this.questionRepository = questionRepository;
         this.questionMapper = questionMapper;
+        this.textClassifierService = textClassifierService;
     }
 
     @Override
     public List<SingleCorrectQuestion> getAllQuestions() {
-        return questionRepositpry.findAllSingleCorrectQuestions();
+        return questionRepository.findAllSingleCorrectQuestions();
     }
 
     @Override
     public List<Question> addQuestions(List<Question> questions) {
-        return questionRepositpry.saveAll(questions);
+        return questionRepository.saveAll(questions);
     }
 
     @Override
@@ -42,7 +43,7 @@ public class QuestionServiceImpl implements QuestionService{
                 .map(this::convertDtoToQuestion)
                 .toList();
 
-        questionRepositpry.saveAll(questions);
+        questionRepository.saveAll(questions);
 
         return questions.size();
     }
@@ -51,9 +52,7 @@ public class QuestionServiceImpl implements QuestionService{
         SingleCorrectQuestion question = questionMapper.toEntity(dto);
         question.setQuestionDifficulty(dto.getQuestionDifficulty());
         question.setCreatedOn(LocalDate.now());
-        if (CollectionUtil.isNullOrEmpty(question.getTags())) {
-            question.setTags(determineQuestionTags(question.getQuestionDescription()));
-        }
+        question.setTags(determineQuestionTags(question.getQuestionDescription()));
         if (!CollectionUtil.isNullOrEmpty(question.getOptions())) {
             question.getOptions().forEach(answer -> {
                 answer.setQuestion(question);
@@ -63,7 +62,7 @@ public class QuestionServiceImpl implements QuestionService{
     }
 
     // TODO: implement this using a probability based scoring system based on keyword identification
-    private final List<String> determineQuestionTags (String questionDescription) {
-        return Collections.emptyList();
+    private List<String> determineQuestionTags (String questionDescription) {
+        return textClassifierService.classifyText(questionDescription);
     }
 }
