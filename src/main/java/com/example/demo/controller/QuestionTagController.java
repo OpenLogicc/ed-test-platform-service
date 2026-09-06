@@ -1,9 +1,11 @@
 package com.example.demo.controller;
 
 import com.example.demo.dto.WordTagScoreDto;
+import com.example.demo.model.MemorySpace;
 import com.example.demo.service.QuestionTagService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,11 +27,11 @@ public class QuestionTagController {
     }
 
     @PostMapping
-    public List<WordTagScoreDto> loadTagsIntoCache(String fileName) {
-        try { return questionTagService.loadTagsIntoCache(fileName);}
+    public int loadTags(String fileName, MemorySpace memorySpace) {
+        try { return questionTagService.loadTags(fileName, memorySpace);}
         catch (Exception e) {
             LOGGER.info("Exception occurred while processing : ", e);
-            return Collections.emptyList();
+            return 0;
         }
     }
 }

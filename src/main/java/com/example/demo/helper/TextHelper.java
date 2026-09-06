@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.IntStream;
 
 @Component
@@ -29,12 +30,12 @@ public class TextHelper {
                 s.append(text.charAt(i));
             }
             else if(!s.isEmpty()) {
-                ans.add(s.toString());
+                ans.add(s.toString().toLowerCase(Locale.ROOT));
                 s.delete(0, s.length());
             }
         }
         if(!s.isEmpty()) {
-            ans.add(s.toString());
+            ans.add(s.toString().toLowerCase(Locale.ROOT));
         }
         return ans;
     }
