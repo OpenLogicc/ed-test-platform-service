@@ -4,9 +4,8 @@ package com.example.demo.Notification;
 public class StudentEmailRequest {
     private String studentEmail;
     private String subject;
-    private String title;
-    private String badgeText;
-    private String priceText;
+    private String name;
+    private String message;
     private String body;
     private String buttonUrl;
 
@@ -17,14 +16,11 @@ public class StudentEmailRequest {
     public String getSubject() { return subject; }
     public void setSubject(String subject) { this.subject = subject; }
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public String getBadgeText() { return badgeText; }
-    public void setBadgeText(String badgeText) { this.badgeText = badgeText; }
-
-    public String getPriceText() { return priceText; }
-    public void setPriceText(String priceText) { this.priceText = priceText; }
+    public String getMessage() { return message; }
+    public void setMessage(String message) { this.message = message; }
 
     public String getBody() { return body; }
     public void setBody(String body) { this.body = body; }
