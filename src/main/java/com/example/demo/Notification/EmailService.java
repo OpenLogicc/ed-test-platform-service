@@ -33,17 +33,15 @@ public class EmailService {
         mailSender.send(mimeMessage);
     }
 
-    public String buildStartupOfferEmail(String studentName, String ctaUrl) {
-        String safeName = (studentName != null && !studentName.isBlank()) ? studentName : "Future Ranker";
-        String safeUrl = (ctaUrl != null && !ctaUrl.isBlank()) ? ctaUrl : "https://yourwebsite.com";
-
+    public String buildStartupOfferEmail(String studentName, String msg, String ctaUrl) {
         try {
             ClassPathResource resource = new ClassPathResource("templates/education-offer.html");
             String htmlTemplate = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
 
             return htmlTemplate
-                    .replace("{{STUDENT_NAME}}", safeName)
-                    .replace("{{CTA_URL}}", safeUrl);
+                    .replace("{{STUDENT_NAME}}", studentName)
+                    .replace("{{MESSAGE}}", msg)
+                    .replace("{{CTA_URL}}", ctaUrl);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load email template file", e);
         }

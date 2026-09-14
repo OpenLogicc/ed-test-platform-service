@@ -31,16 +31,20 @@ public class EmailController {
                     : "Welcome to EdTech! Claim your free study pass 🎯";
 
             // Fallback to name or title if provided, otherwise default to "Future Ranker"
-            String studentName = (request.getTitle() != null && !request.getTitle().isBlank())
-                    ? request.getTitle()
+            String studentName = (request.getName() != null && !request.getName().isBlank())
+                    ? request.getName()
                     : "Future Ranker";
+
+            String msg = (request.getMessage() != null && !request.getMessage().isBlank())
+                    ? request.getMessage()
+                    : "We are excited to have you on board! Click the button below to get started!";
 
             String ctaUrl = (request.getButtonUrl() != null && !request.getButtonUrl().isBlank())
                     ? request.getButtonUrl()
                     : "https://yourwebsite.com/dashboard";
 
             // 1. Build the startup HTML template from resources/templates/education-offer.html
-            String htmlTemplate = emailService.buildStartupOfferEmail(studentName, ctaUrl);
+            String htmlTemplate = emailService.buildStartupOfferEmail(studentName, msg, ctaUrl);
 
             // 2. Dispatch the HTML email
             emailService.sendHtmlEmail(
